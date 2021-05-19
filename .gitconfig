@@ -1,0 +1,25 @@
+[user]
+  name = chibaqn
+  email = 18485989+chibaqn@users.noreply.github.com
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+[color]
+  ui = auto
+[alias]
+  alias = !git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort
+  b = branch
+  co = checkout
+  s = status --short --branch
+  st = status
+  d = diff
+  dm = diff master
+  dw = diff --color-words
+  g = grep
+  l = log --stat
+  ls = log --stat -n 1 # display previous log
+  ll = log --pretty=format:\"%h %C(yellow)%ad%C(reset) | %s%C(red)%d%C(reset) %C(blue)[%an]%C(reset)\" --graph --date=iso
+[grep]
+  lineNumber = true
+[init]
+	defaultBranch = main
